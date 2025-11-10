@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="admin-dashboard">
+  <h2>🧑‍💼 Admin Dashboard</h2>
+
+  <div class="stats-box">
+    <p><strong>Total Orders:</strong> {{ total_orders }}</p>
+    <p><strong>Total Revenue:</strong> ₹{{ total_revenue }}</p>
+    <p><strong>Pending Orders:</strong> {{ pending }}</p>
+  </div>
+
+  <div class="admin-links">
+    <a href="{% url 'manage_orders' %}" class="btn-manage">📦 Manage Orders</a>
+    <a href="{% url 'export_orders_csv' %}" class="btn-export">⬇️ Export Orders CSV</a>
+  </div>
+</div>
+
+{% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
