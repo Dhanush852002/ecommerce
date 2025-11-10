@@ -51,8 +51,8 @@ python manage.py runserver
 
 
 # admin login
-Username: kalyan
-Password: tiger
+Username: dhanush
+Password: dhanush
 
 ecommerce/
 │
@@ -83,4 +83,5 @@ Dhanush Kumar D.
 💼 Django Full Stack Developer
 📧 [dhanush852002@gmail.com
 ]
+
 🌐 https://github.com/Dhanush852002
